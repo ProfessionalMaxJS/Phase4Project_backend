@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quantity_selected: 1
+  item: one
+  user: one
+
+two:
+  quantity_selected: 1
+  item: two
+  user: two
