@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
+# namespace :api do
   resources :selected_items
   resources :purchased_items
   resources :items
-  resources :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  # resources :users
+# end
+ 
+post "/users", to: "users#create"
+post "/sessions", to: "sessions#create"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+# get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
+
 end
