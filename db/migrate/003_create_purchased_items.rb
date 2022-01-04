@@ -1,4 +1,4 @@
-class CreatePurchasedItems < ActiveRecord::Migration[7.0]
+class CreatePurchasedItems < ActiveRecord::Migration[6.1]
   def change
     create_table :purchased_items do |t|
       t.belongs_to :item, null: false, foreign_key: true

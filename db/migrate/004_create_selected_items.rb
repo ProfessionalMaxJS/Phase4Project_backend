@@ -1,4 +1,4 @@
-class CreateSelectedItems < ActiveRecord::Migration[7.0]
+class CreateSelectedItems < ActiveRecord::Migration[6.1]
   def change
     create_table :selected_items do |t|
       t.integer :quantity_selected
